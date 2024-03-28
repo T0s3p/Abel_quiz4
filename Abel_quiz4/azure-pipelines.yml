@@ -1,0 +1,23 @@
+trigger:
+  branches:
+    include:
+    - main
+
+pool:
+  name: Abel_quiz4
+
+steps:
+- script: |
+    echo "Building the application..."
+    # Add commands to build your ASP.NET web application
+  displayName: 'Build'
+
+- script: |
+    echo "Running unit tests..."
+    # Add commands to run your unit tests
+  displayName: 'Run Tests'
+
+- script: |
+    echo "Deploying the application..."
+    # Add commands to deploy your application
+  displayName: 'Deploy'
